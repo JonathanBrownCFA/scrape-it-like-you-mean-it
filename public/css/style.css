@@ -72,8 +72,7 @@ h1.display-3 {
 .jumbotron {
   text-align: center;
   border-bottom: .05rem solid #d3d1d1;
-  /*background: linear-gradient( rgba(20, 20, 20, .5), rgba(20, 20, 20, 0.4)), url("/img/guardian.jpg");*/
-  /*background-size: cover;*/
+  
 }
 
 div.jumbotron {
