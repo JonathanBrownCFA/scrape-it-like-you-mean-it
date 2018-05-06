@@ -29,7 +29,7 @@ app.set('view engine', 'handlebars');
 app.use(express.static("public"));
 
 // Mongoose connects to mongodb 
-mongoose.connect("mongodb://heroku_nnx6fm0c:<dbpassword>@ds113700.mlab.com:13700/heroku_nnx6fm0c");
+mongoose.connect("mongodb://heroku_nnx6fm0c:mLab69*JR@ds113700.mlab.com:13700/heroku_nnx6fm0c");
 var db = mongoose.connection;
 
 // if any errors than console errors
