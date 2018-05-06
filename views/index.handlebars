@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills float-right">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.theguardian.com/us" target="_blank">Visit The Guardian US Edition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/JonathanBrownCFA" target="_blank">Github Repo</a>
+                </li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Cheerio and Mongo Webscraping, like scraping fingernails on a brick, but less painful.</h3>
+    </div>
+
+    <div class="jumbotron">
+        <h1 class="jumboheader">The Guardian US Scraper</h1>
+        <p class="lead">Scrape my favorite UK News site for the latest articles about what is going on in the world, from a slightly US vantage point</p>
+        <p><a class="btn btn-lg btn-success" href="/scrape" role="button">Go Fetch !</a></p>
+    </div>
+
+    {{!--News Cards--}} {{!--Iterate through the results and populate the handlebars injection points with the scraped titles,
+    links, and article snippets.--}} {{#each result}}
+    <div class="card news-section">
+        <a href="{{this.link}}">
+            <h4 class="card-header">{{this.title}}</h4>
+        </a>
+        <div class="card-block">
+            {{!--
+            <h4 class="card-title"></h4>
+            </a>--}}
+            <a href="{{this.link}}">
+                <p class="card-text">{{this.articleSnippet}}</p>
+            </a>
+            <br>
+            <a href="/articles/{{this._id}}" class="btn btn-primary">Comment</a>
+        </div>
+    </div>
+    <br>
+    <br> {{/each}}
+
+
+
+    <footer class="footer">
+        <p>&copy; Jonathan Brown, CFA</p>
+    </footer>
+
+</div>
+<!-- /container -->
