@@ -1,7 +1,7 @@
-# The Guardian US Edition Mega Mongo News Scraper
-Full stack web application that scrapes the Guardian website using a handful of npm packages, most notably cheerio and mongoose. 
+# The Drudge Report Mega Mongo News Scraper
+Full stack web application that scrapes the Drudge Report website using a handful of npm packages, most notably cheerio and mongoose. 
 
-* Whether run locally via node server.js or the Heroku app link the most recent Guardian US news stories are scraped and delivered to the users webpage.
+* Whether run locally via node server.js or the Heroku app link the most recent Drudge Report news stories are scraped and delivered to the users webpage.
 
 * Users can add comments to stories and when they realize that what they said was probably wrong or offensive, they can delete those comments.
 ```
@@ -35,7 +35,7 @@ Type `npm install` in the command line to install all the dependcies located wit
 
  CD into root of cloned directory and run `node server.js` and open your preferred browser to the port specified by the node server.js response (localhost:4000)
 
-`localhost:port/scrape` will scrape the Guardian UK website
+`localhost:port/scrape` will scrape the Drudge Report website
 
 `localhost:port/articles` will display the scraped articles
 
