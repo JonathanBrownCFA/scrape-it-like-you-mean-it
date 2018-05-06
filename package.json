@@ -1,7 +1,7 @@
 {
   "name": "scrape-it-like-you-mean-it",
   "version": "1.0.0",
-  "description": "Scrapping news from The Guardian UK US edition",
+  "description": "Scrapping news from The Drudge Report",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

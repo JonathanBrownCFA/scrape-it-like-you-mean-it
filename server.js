@@ -10,7 +10,7 @@ mongoose.Promise = Promise;
 
 // Initialize Express
 var app = express();
-var PORT = process.env.PORT || 4000;
+var PORT = process.env.PORT || 8000;
 
 // Use morgan and body parser
 app.use(logger("dev"));
@@ -45,7 +45,7 @@ db.once("open", function () {
 // Require the routes in our controllers js file
 require("./controllers/articlesController.js")(app);
 
-//Listen on PORT 4000 & notify
+//Listen on PORT 8000 & notify
 app.listen(PORT, function () {
-  console.log("App running on port 4000");
+  console.log("App running on port 8000");
 });

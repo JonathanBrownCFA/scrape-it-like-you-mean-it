@@ -13,8 +13,8 @@ module.exports = function (app) {
     });
 
   app.get("/scrape", function (req, res) {
-    //Grabbing the body, or HTML of the US Edition of my favorite UK news website
-    request("www.theguardian.com/us", function (error, response, html) {
+    //Grabbing the body, or HTML of the Drudge Report
+    request("http://www.drudgereport.com/", function (error, response, html) {
       //Save HTML to $ using the Cheerio NPM package
       var $ = cheerio.load(html);
       // Iterate through articles
