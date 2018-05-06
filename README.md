@@ -5,7 +5,7 @@ Full stack web application that scrapes the Drudge Report website using a handfu
 
 * Users can add comments to stories and when they realize that what they said was probably wrong or offensive, they can delete those comments.
 ```
-Live Heroku link: https://.herokuapp.com/
+Live Heroku link: https://scrape-it-like-you-mean-it.herokuapp.com/
 ```
 ### User Requirement
 
